@@ -1133,13 +1133,14 @@ footer .copyright h4 {
         margin-left: 10%;
     }
     .item_Team--eight {
-        min-height: 508px;
-        min-width: 418px;
+        min-height: 455px;
+        min-width: 350px;
     }
     .section_eight--name h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .section_eight--img {
+        top: 12%;
         width: 230px;
         height: 230px;
         left: calc((100% - 230px)/2);
