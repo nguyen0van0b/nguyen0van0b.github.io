@@ -97,7 +97,7 @@
                         <a class="btn btn-nftbox" href="#">NFT BOX</a>
                     </div> -->
                     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
+                    <a href="#" onclick="signOut();">Sign out</a>
                     <a href="javascript:void(0);" class="menu-mobile-icon" onclick="Function_menu_mobile()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -598,6 +598,14 @@
             console.log('Name: ' + profile.getName());
             console.log('Image URL: ' + profile.getImageUrl());
             console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+    </script>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function() {
+                console.log('User signed out.');
+            });
         }
     </script>
     <script>
