@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./Css/Style.css">
     <link rel="stylesheet" href="./Css/slick.css">
     <link rel="icon" type="image/png" href="./Media/02.png" />
+
+    <meta name="google-signin-client_id" content="160202613495-5938fsc6a08ctttt3oph329e088oo2bn.apps.googleusercontent.com">
+    <!-- API GOOGLE -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- animation AOS CSS -->
     <link href="./Css/AOS.css" rel="stylesheet">
     <!-- icon menu -->
@@ -92,6 +96,8 @@
                     <!-- <div class="wrapper-btn-nftbox">
                         <a class="btn btn-nftbox" href="#">NFT BOX</a>
                     </div> -->
+                    <div class="g-signin2"></div>
+
                     <a href="javascript:void(0);" class="menu-mobile-icon" onclick="Function_menu_mobile()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -121,7 +127,7 @@
                         <img src="./Media/windown.png" alt="">
                     </div>
                     <div class="clip-section2-second">
-                        <iframe src="https://www.youtube.com/embed/ph35thwEEfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <iframe src="https://www.youtube.com/embed/ph35thwEEfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     </div>
                 </div>
 
@@ -281,7 +287,7 @@
                         </div>
                     </div>
                     <div class="img-section-five">
-                        <img src="./Media/step_hero_marketplace.png" alt="">
+                        <!-- <img src="./Media/step_hero_marketplace.png" alt=""> -->
                     </div>
                 </div>
             </section>
@@ -297,7 +303,7 @@
                         </div>
                     </div>
                     <div class="img-section-six">
-                        <img src="./Media/AdobeStock_430001330_denisismagilov.jpg" alt="">
+                        <!-- <img src="./Media/AdobeStock_430001330_denisismagilov.jpg" alt=""> -->
                     </div>
                 </div>
             </section>
@@ -469,6 +475,7 @@
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -581,6 +588,15 @@
         AOS.init({
             once: true
         });
+    </script>
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
     </script>
     <script>
         // $(document).ready(function() {

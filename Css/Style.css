@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Manuskript";
     font-style: normal;
     font-weight: normal;
@@ -17,15 +17,15 @@
     font-style: normal;
     font-weight: normal;
     src: url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.eot?#iefix") format("embedded-opentype"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.woff2") format("woff2"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.woff") format("woff"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.ttf") format("truetype"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.svg#Windlass") format("svg")
-}
+} */
 
  :root {
     --font-size-title: 4rem;
 }
 
 html {
-    /* font-family: "Times New Roman", sans-serif; */
-    font-family: "Manuskript", "Georgia", "serif";
+    font-family: "Times New Roman", sans-serif;
+    /* font-family: "Manuskript", "Georgia", "serif"; */
     font-size: 9px;
     scroll-behavior: smooth;
 }
@@ -92,7 +92,7 @@ header {
 
 .wrapper-main {
     /* background-color: #000; */
-    background: url("../Media/Background.png") no-repeat center center / cover;
+    /* background: url("../Media/Background.png") no-repeat center center / cover; */
 }
 
 .container {
@@ -1284,7 +1284,7 @@ footer .copyright h4 {
             margin-top: -100px;
         } */
     .item_FEATURES {
-        height: auto;
+        height: 100%;
     }
     .item_FEATURES-desc h3 {
         margin-top: 20px;
@@ -1382,8 +1382,6 @@ footer .copyright h4 {
     }
     .section_second2--decs ion-icon {
         margin: 0 8px;
-        /* width: 12vw; */
-        /* height: 12vh; */
     }
     .section_FEATURES {
         width: 100%;
@@ -1422,14 +1420,20 @@ footer .copyright h4 {
         order: 2;
         overflow: hidden;
     }
+    .container_left .item_FEATURES-desc {
+        top: 10%;
+    }
     .item_FEATURES-desc {
-        width: 80%;
+        width: 85%;
         position: absolute;
         top: 5%;
         left: 0;
     }
     .section_FEATURES h1 {
         margin: 5px 20px;
+    }
+    .item_FEATURES-desc p {
+        line-height: 2;
     }
     .cSlider--single .cSlider__item img {
         max-width: 649px;
@@ -1471,14 +1475,23 @@ footer .copyright h4 {
         top: 20%;
         left: 61%;
     }
+    .section_four {
+        height: 750px;
+    }
     .img-section-four {
         width: 41%;
         height: 50%;
         left: 2%;
     }
-    .section_four--decs p {
-        color: white;
-        margin: 19px 0 9px 0;
+    .section_four--decs {
+        position: initial;
+        width: 100%;
+    }
+    .img-section-four {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: initial;
     }
     .img-section-five {
         top: 30%;
