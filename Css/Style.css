@@ -206,19 +206,11 @@ li:hover a {
 }
 
 .section_second--decs {
-    width: 25%;
-    top: 8%;
-    left: 60%;
+    width: 36%;
+    top: 0%;
+    left: 58%;
     position: absolute;
-    background-color: #0006;
-    padding: 20px;
-    /* text-align: center; */
     z-index: 2;
-}
-
-.section_second--decs img {
-    width: 60%;
-    margin-left: 20%;
 }
 
 .section_second--decs p {
@@ -331,10 +323,24 @@ li:hover a {
     position: relative;
 }
 
+.section_FEATURES .FEATURES_img_left .about {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    right: 5%;
+}
+
 .section_FEATURES .FEATURES_img_right {
     width: 50%;
     position: relative;
     order: 2;
+}
+
+.wrapper_fearures .FEATURES_img_right .feature {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 5%;
 }
 
 .section_FEATURES h1 {
@@ -524,6 +530,7 @@ li:hover a {
     height: 700px;
     position: relative;
     background-color: #000000d9;
+    overflow: hidden;
     /* background-image: url(https://images.pexels.com/photos/2936144/pexels-photo-2936144.jpeg?cs=srgb&dl=pexels-vaidas-vaiciulis-2936144.jpg&fm=jpg); */
 }
 
@@ -776,6 +783,7 @@ li:hover a {
     height: 100%;
     margin: auto;
     text-align: center;
+    overflow: hidden;
 }
 
 .section_eight--container .ourteam_title {
@@ -1366,6 +1374,8 @@ footer .copyright h4 {
         width: calc(100% - 40px);
         top: 20%;
         left: 0;
+        margin: auto;
+        position: inherit;
     }
     .section_second2--decs h1 {
         font-size: 8vw;
@@ -1386,6 +1396,7 @@ footer .copyright h4 {
     .section_FEATURES--container {
         width: 100%;
         height: 100%;
+        overflow: hidden;
     }
     .section_FEATURES .FEATURES_bg1 {
         height: 600px;
@@ -1402,6 +1413,7 @@ footer .copyright h4 {
     .section_FEATURES .FEATURES_img_right {
         position: relative;
         width: 100%;
+        height: 100%;
     }
     .section_FEATURES .FEATURES_img_right {
         order: 1;
@@ -1548,15 +1560,12 @@ footer .copyright h4 {
         min-height: 245px;
         top: 80%;
     }
-    .section_second--decs {
-        position: inherit;
-    }
     .section_second--decs p {
         font-size: 2rem;
         margin: 0;
     }
     .section_third--decs img {
-        min-height: 100px !important;
+        min-height: 93px !important;
         top: -15% !important;
     }
     .section_seven img:first-child {
@@ -1599,15 +1608,23 @@ footer .copyright h4 {
     .item_FEATURES-desc h1 {
         font-size: 5em;
     }
+    .wrapper_fearures .FEATURES_img_right .feature {
+        width: 100%;
+        left: 0;
+    }
+    .section_FEATURES .FEATURES_img_left .about {
+        width: 100%;
+        right: 0;
+    }
     .slick-list {
         height: 100% !important;
         padding-right: 5% !important;
     }
     .img-section-four {
-        left: 20%;
-        top: 60%;
-        width: 238px;
-        height: 200px;
+        left: 2%;
+        top: 51%;
+        width: 345px;
+        height: 257px;
     }
     .section_third--decs {
         width: 90%;
@@ -1647,8 +1664,9 @@ footer .copyright h4 {
         height: 82%;
     }
     .section_four--decs {
-        width: 92%;
-        left: 5%;
+        width: 135%;
+        left: -20%;
+        top: 0;
     }
     .section_Island--container img {
         width: 100%;
