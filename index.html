@@ -96,7 +96,7 @@
                     <!-- <div class="wrapper-btn-nftbox">
                         <a class="btn btn-nftbox" href="#">NFT BOX</a>
                     </div> -->
-                    <div class="g-signin2"></div>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
                     <a href="javascript:void(0);" class="menu-mobile-icon" onclick="Function_menu_mobile()">
                         <i class="fa fa-bars"></i>
@@ -127,7 +127,7 @@
                         <img src="./Media/windown.png" alt="">
                     </div>
                     <div class="clip-section2-second">
-                        <!-- <iframe src="https://www.youtube.com/embed/ph35thwEEfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe src="https://www.youtube.com/embed/ph35thwEEfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -590,6 +590,8 @@
         });
     </script>
     <script>
+        onSignIn();
+
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
             console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
