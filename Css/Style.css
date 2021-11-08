@@ -83,6 +83,13 @@ header {
     visibility: visible;
 }
 
+.g-signin2 {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 100;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -364,6 +371,10 @@ li:hover a {
 
 .container_right {
     order: 1;
+}
+
+.item_FEATURES {
+    height: 100%;
 }
 
 .section_FEATURES--container {
@@ -1283,9 +1294,6 @@ footer .copyright h4 {
             margin-left: 10%;
             margin-top: -100px;
         } */
-    .item_FEATURES {
-        height: 100%;
-    }
     .item_FEATURES-desc h3 {
         margin-top: 20px;
         font-size: 4em;

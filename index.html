@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./Css/Style.css">
     <link rel="stylesheet" href="./Css/slick.css">
     <link rel="icon" type="image/png" href="./Media/02.png" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- login with google -->
     <meta name="google-signin-client_id" content="160202613495-5938fsc6a08ctttt3oph329e088oo2bn.apps.googleusercontent.com">
     <!-- API GOOGLE -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- animation AOS CSS -->
     <link href="./Css/AOS.css" rel="stylesheet">
@@ -96,8 +98,7 @@
                     <!-- <div class="wrapper-btn-nftbox">
                         <a class="btn btn-nftbox" href="#">NFT BOX</a>
                     </div> -->
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                    <a href="#" onclick="signOut();">Sign out</a>
+                    <!-- <a href="#" onclick="signOut();">Sign out</a> -->
                     <a href="javascript:void(0);" class="menu-mobile-icon" onclick="Function_menu_mobile()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -106,6 +107,7 @@
         </div>
     </header>
     <a id="btn-top"><img src="./Media/top.png" alt=""></a>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-width="200" data-height="50" data-longtitle="true" data-scope='email' data-theme='dark'></div>
     <main>
         <div class="wrapper-main">
             <section class="section_second">
@@ -140,7 +142,7 @@
                     </div>
                     <div class="section_FEATURES--container container_left">
                         <img src="./Media/background-paper-sxaaaaa (1).png" class="FEATURES_bg1" alt="">
-                        <div class="item_FEATURES" data-aos="fade-left">
+                        <div class="item_FEATURES" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
                             <ul class="item_FEATURES-desc">
                                 <li><img src="./Media/banhlai.png" alt="">
                                     <p><span>Pirate Land</span> is an Action Role-Playing Game set in a deadly yet exciting pirate world. The project is created based on blockchain technology combined with metaverse to collect tokens of real value through
@@ -584,14 +586,13 @@
     <script type="text/javascript" src="js/AOS.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/Pirateland.js"></script>
+
     <script>
         AOS.init({
             once: true
         });
     </script>
     <script>
-        onSignIn();
-
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
             console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
