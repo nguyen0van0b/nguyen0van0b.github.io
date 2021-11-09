@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PirateLand</title>
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link rel="stylesheet" href="./Css/slick.css">
+    <link rel="icon" type="image/png" href="./Media/02.png" />
+    <!-- icon menu -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- icoin application -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<style>
+    @font-face {
+        font-family: "slick";
+        src: url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.eot");
+        src: url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.woff") format("woff"), url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.ttf") format("truetype"), url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.svg#slick") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* ************************************************************* */
+    
+    .js .cSlider--single>div:nth-child(1n+2) {
+        display: none;
+    }
+    
+    .js .cSlider--single.slick-initialized>div:nth-child(1n+2) {
+        display: block;
+    }
+    
+    h2 {
+        position: relative;
+        font-size: 2.25rem;
+        background-color: #f0f0f0;
+        color: #3498db;
+        text-align: center;
+        padding: 2%;
+        margin: 0.5rem;
+    }
+    
+    .cSlider--single h2 {
+        line-height: 10rem;
+    }
+    
+    .cSlider--nav h2::before {
+        content: "";
+        display: block;
+        padding-top: 75%;
+    }
+    
+    .slick-slide.is-active h2 {
+        color: rgb(247, 0, 0)!important;
+        background-color: #fff;
+    }
+    
+    .cSlider--nav .slick-slide {
+        cursor: pointer;
+    }
+    
+    .cSlider--nav span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <a href="#">
+                    <img src="./Media/logo.png" alt="logo-PirateLand">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="main-menu" id="myTopnav">
+                    <li><a href="https://whitepaper.pirateland.io" target="_blank">White Paper</a></li>
+                    <li><a href="#Ship">Ship</a></li>
+                    <li><a href="#Team">Team</a></li>
+                    <li><a href="#Roadmap">Roadmap</a></li>
+                    <li><a href="#Buy_box">Buy box</a></li>
+                    <!-- <div class="wrapper-btn-nftbox">
+                        <a class="btn btn-nftbox" href="#">NFT BOX</a>
+                    </div> -->
+                    <a href="javascript:void(0);" class="menu-mobile-icon" onclick="Function_menu_mobile()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a id="btn-top"><img src="./Media/top.png" alt=""></a>
+    <main>
+        <div class="wrapper-main">
+            <section class="section_second">
+                <div class="section_second--container">
+                    <div class="wrapper">
+                        <img src="./Media/Layer 1.jpg" alt="">
+                    </div>
+                    <div class="section_second--decs">
+                        <img src="./Media/logo.png" alt="">
+                        <p>PIRATE TREASURE IN METAVERSE</p>
+                        <div class="get_ready">
+                            <span> GET READY!</span>
+                        </div>
+                        <!-- <a class="section_first--btn-primary">Play game</a> -->
+                    </div>
+                    <!-- <div class="clip-section-second">
+                        <img src="./Media/pirate_ship_01.png" alt="" class="image normal-zoom">
+                    </div> -->
+                </div>
+
+            </section>
+            <section class="section_second2" id="How_to_play">
+                <div class="section_second2--container">
+                    <div class="section_second2--decs">
+                        <h1>Available soon on</h1>
+                        <!-- <ion-icon name="logo-apple"></ion-icon> -->
+                        <!-- <ion-icon name="logo-xbox"></ion-icon> -->
+                        <!-- <ion-icon name="logo-google-playstore"></ion-icon> -->
+                        <!-- <ion-icon name="logo-windows"></ion-icon> -->
+                        <img src="./Media/googleplay.png" alt="">
+                        <img src="./Media/appstore.png" alt="">
+                        <img src="./Media/windown.png" alt="">
+                    </div>
+                    <div class="clip-section2-second">
+                        <iframe src="https://www.youtube.com/embed/ph35thwEEfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section_FEATURES" id="Features">
+                <div class="wrapper_fearures">
+                    <div class="FEATURES_img_left">
+                        <h1 id="FEATURES_1">About Pirate Land</h1>
+                        <img src="./Media/Thuyenvadao01.png" alt="">
+                    </div>
+                    <div class="section_FEATURES--container container_left">
+                        <img src="./Media/background-paper-sxaaaaa (1).png" class="FEATURES_bg1" alt="">
+                        <div class="item_FEATURES">
+                            <ul class="item_FEATURES-desc">
+                                <li><img src="./Media/banhlai.png" alt="">
+                                    <p><span>Pirate Land</span> is an Action Role-Playing Game set in a deadly yet exciting pirate world. The project is created based on blockchain technology combined with metaverse to collect tokens of real value through
+                                        skilled gameplay. In a storyline inspired by ruthless pirates, you will fight to reclaim what was taken and embark on epic adventures. These will take place in a cruel world full of battles, lost lands and treasures.
+                                        Pirate seas filled with great characters and breathtaking quests will keep you on your toes as you try to be the king of all pirates.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper_fearures">
+                    <div class="FEATURES_img_right">
+                        <img src="./Media/Tonghopthuyen.png" alt="">
+                        <h1 id="FEATURES_2">Game Feature</h1>
+                    </div>
+                    <div class="section_FEATURES--container container_right">
+                        <img src="./Media/background-paper-sx.png" class="FEATURES_bg2" alt="">
+                        <div class="item_FEATURES">
+                            <ul class="item_FEATURES-desc">
+                                <li><img src="./Media/banhlai.png" alt="">
+                                    <p><span>Metaverse:</span> An endless 3D universe, creating a game with an extraordinary story, diverse gameplay, and a metaverse game will give players a great experience</p>
+                                </li>
+                                <li><img src="./Media/banhlai.png" alt="">
+                                    <p><span>NFT:</span> Built on blockchain BEP – 721, owning NFTs with higher and rarer levels helps bring more profits to players!</p>
+                                </li>
+                                <li><img src="./Media/banhlai.png" alt="">
+                                    <p><span>Gameplay:</span> Pirate Land declares that the player's skill will be an essential factor in battles</p>
+                                </li>
+                                <li><img src="./Media/banhlai.png" alt="">
+                                    <p><span>Marketplace:</span> A cross-chain NFT platform where players can find and purchase items in the game</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section_third" id="Ship">
+                <div class="container">
+                    <!-- <h1 class="text-center">Slick Slider Syncing</h1> -->
+                    <div class="cSlider--nav">
+                        <div class="cSlider__item cSlider__ani2">
+                            <img src="./Media/1.png" class="active-0" alt="">
+                            <!-- <img src="./Media/haitac1.png" class="active-1" alt=""> -->
+                        </div>
+                        <div class="cSlider__item cSlider__ani1">
+                            <img src="./Media/2.png" class="active-1" alt="">
+                            <!-- <img src="./Media/haitac2.png" class="active-2" alt=""> -->
+                        </div>
+                        <div class="cSlider__item cSlider__ani2">
+                            <img src="./Media/3.png" class="active-2" alt="">
+                            <!-- <img src="./Media/haitac3.png" class="active-3" alt=""> -->
+                        </div>
+                        <div class="cSlider__item cSlider__ani1">
+                            <img src="./Media/4.png" class="active-3" alt="">
+                            <!-- <img src="./Media/haitac4.png" class="active-4" alt=""> -->
+                        </div>
+                        <div class="cSlider__item cSlider__ani2">
+                            <img src="./Media/5.png" class="active-4" alt="">
+                            <!-- <img src="./Media/haitac5.png" class="active-5" alt=""> -->
+                        </div>
+                        <div class="cSlider__item cSlider__ani1">
+                            <img src="./Media/HAITACCUOI01.png" class="active-5" alt="">
+                            <!-- <img src="./Media/haitac4.png" class="active-4" alt=""> -->
+                        </div>
+                        <div class="cSlider__item cSlider__ani2">
+                            <img src="./Media/HAITACCUOI02.png" class="active-6" alt="">
+                            <!-- <img src="./Media/haitac5.png" class="active-5" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="cSlider--single">
+                        <div class="cSlider__item">
+                            <!-- <img src="./Media/SLOOP1.png" alt=""> -->
+                            <img src="./Media/haitac1.png" alt="">
+                            <div class="section_third--decs">
+                                <img src="./Media/common.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cSlider__item">
+                            <!-- <img src="./Media/Cog1.png" alt="" class="pirate_ship2"> -->
+                            <img src="./Media/haitac2.png" alt="">
+                            <div class="section_third--decs">
+                                <img src="./Media/uncommon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cSlider__item">
+                            <!-- <img src="./Media/Clipper1.png" alt=""> -->
+                            <img src="./Media/haitac3.png" alt="">
+                            <div class="section_third--decs">
+                                <img src="./Media/rare.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cSlider__item">
+                            <!-- <img src="./Media/Booty1.png" alt=""> -->
+                            <img src="./Media/haitac4.png" alt="">
+                            <div class="section_third--decs">
+                                <img src="./Media/supperrare.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cSlider__item">
+                            <!-- <img src="./Media/Cutclass1.png" alt=""> -->
+                            <img src="./Media/haitac5.png" alt="">
+                            <div class="section_third--decs">
+                                <img src="./Media/LEGENDARY.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cSlider__item">
+                            <img src="./Media/Jack_Ketch1.png" alt="" class="ship-6">
+                            <div class="section_third--decs">
+                                <img src="./Media/myth-Jack-Ketch.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cSlider__item">
+                            <img src="./Media/Man-O-War1.png" alt="" class="ship-7">
+                            <div class="section_third--decs">
+                                <img src="./Media/myth-mano.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_four" id="Buy_box">
+                <div class="section_four--container">
+                    <div class="section_four--decs">
+                        <h4>AIRDROP</h4>
+                        <p>Join Airdrop and earn $PRT token now</p>
+                        <p id="coming_soon">Coming soon</p>
+                    </div>
+                    <div class="img-section-four">
+                        <img src="./Media/box.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+            <section class="section_five" id="Game_Market">
+                <div class="section_five--container">
+                    <div class="section_five--decs">
+                        <h4>Your <span>individual skill </span>game and <span>teamwork</span></h4>
+                        <p><b>Piraland</b> is a open world game based on Blockchian technology. You can gather your friends, form a team and begin your own journey in wonderful newland. <b>PirateLand's</b> gameplay is designed to revolve around the combination
+                            of your personal skills and teamwork. Challenge yourself with various game modes: PVE & PVP, coming with monthly updates and attractive rewards.</p>
+                        <div class="buy-box">
+                            <p>Play for Free, Play to Earn!</p>
+                            <a class="section_first--btn-primary">Buy Box</a>
+                        </div>
+                    </div>
+                    <div class="img-section-five">
+                        <img src="./Media/step_hero_marketplace.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section_six" id="NFTs">
+                <div class="section_six--container">
+                    <div class="section_six--decs">
+                        <h4>Your <span>individual skill </span>game and <span>teamwork</span></h4>
+                        <p><b>Piraland</b> is a open world game based on Blockchian technology. You can gather your friends, form a team and begin your own journey in wonderful newland. <b>PirateLand's</b> gameplay is designed to revolve around the combination
+                            of your personal skills and teamwork. Challenge yourself with various game modes: PVE & PVP, coming with monthly updates and attractive rewards.</p>
+                        <div class="buy-box">
+                            <p>Play for Free, Play to Earn!</p>
+                            <a class="section_first--btn-primary">Buy Box</a>
+                        </div>
+                    </div>
+                    <div class="img-section-six">
+                        <img src="./Media/AdobeStock_430001330_denisismagilov.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section_Island" id="HOMELAND">
+                <div class="section_Island--container">
+                    <img src="../Media/HomeLand.png" alt="">
+                </div>
+            </section>
+            <section class="section_seven" id="Roadmap">
+                <img src="./Media/roadmap_title.png" alt="">
+                <img src="./Media/roadmap.png" alt="">
+            </section>
+        </div>
+        <section class="section_eight" id="Team">
+            <!-- <img src="./media/background-go-4k_085533615.jpg" alt="" class="background-eight"> -->
+            <div class="section_eight--container">
+                <img src="./Media/ourteam_title.png" alt="" class="ourteam_title">
+                <!-- <div class="caption_eight">OUR TEAM</div> -->
+                <div class="wrapper-item">
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1>Saitou Vu</h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z289012391851810585dfe68c9295f60169c09de9f2df.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Project Leader</h3>
+                            <p class="project_leader">Web Developer (Jul 2020 – Present)<br>Mobile Application Developer at Sony Mobile Communications (Sep 2020 – Mar 2021)<br>Web & ERP Technical Leader (Jul 2017 – Sep 2020)<br>Mobile Application Developer (May 2015 – Jul 2017)</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="https://www.linkedin.com/in/duong-vu-b72518225/" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z2890123918518_a10585dfe68c9295f60169c09de9.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Chief Marketing Officer</h3>
+                            <p>Junior Brand Marketing Officer at Masan Consumer<br> Marketing Executive at Canifa</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z2890123918518_a10585dfe68c9295f60169c09de9f2.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Chief Product Officer</h3>
+                            <p>Product Supervisor at Dwarves Foundation - 2015<br> Project Leader at Linkbynet - 2013</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z2890123918518_a1085dfe68c9295f60169c09de9f2df.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Unity Director</h3>
+                            <p>Game Concept Manager at<br> Senior Unity Developer Remote at Bridged<br> Junior Unity Developer Remote at Chariots Gaming</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z2890123918518_a10585dfe68c9295f60169c09de9f2d.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Chief Creative Officer</h3>
+                            <p>Product Manager at PD Desgin Studio<br> Creative Supervisor at Outstanding Game<br> Product Leader at Potato Play</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z2890123918518_a10585dfe68c9295f60169c09de9f.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Lead 3D Artist</h3>
+                            <p>3D Design Remote at Cargo Studio<br> Senior Artist at Ixora Studio<br> Design Intern at VNG</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/2890123918518_a10585dfe68c9295f60169c09de9f2df.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Lead Game Designer</h3>
+                            <p>Game Concept Designer at Riot Games<br> Fresh Concept Designer at Virtuous</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_Team--eight">
+                        <img src="./Media/NicePng_wanted-poster-png_2338299.png" class="img-wanted" alt="">
+                        <div class="section_eight--name">
+                            <h1></h1>
+                        </div>
+                        <div class="section_eight--img">
+                            <img src="./Media/z2890123918518_a10585dfe69295f60169c09de9f2d.png" alt="">
+                        </div>
+                        <div class="section_eight--decs">
+                            <h3>Leader Artist</h3>
+                            <p>Senior Graphic Designer<br> UI/UX Designer at Glass Egg<br> Crypto Enthusiast</p>
+
+                        </div>
+                        <div class="wrapper_socials">
+                            <a href="#" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_nine">
+            <div class="section_nine--container">
+                <div class="caption_nine">Our Team</div>
+                <div class="wrapper-nine">
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item_Team--nine">
+                        <div class="section_nine--img">
+                            <img src="./Media/wanted_n.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_subscribe">
+            <div class="title_subscribe">
+                <h3>Get the Latest in Your Inbox</h3>
+                <form>
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="helper">
+                <div class="intro">
+                    <div class="logo_footer">
+                        <img src="./Media/logo.png" alt="">
+                    </div>
+                    <p>Gaming Industry and Blockchain Technology Integration is what we strive for</p>
+                </div>
+                <div class="links">
+                    <div class="about">
+                        <h4>ABOUT</h4>
+                        <ul>
+                            <li><a href="#Features">Features</a></li>
+                            <li><a href="#Ship">Ship</a></li>
+                            <li><a href="#Roadmap">Roadmap</a></li>
+                            <!-- <li><a href="#">Backed by</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="FAQ">
+                        <h4>FAQ</h4>
+                        <ul>
+                            <li><a href="https://whitepaper.pirateland.io/disclaimer" target="_blank">Terms and Conditions</a></li>
+                            <li><a href="https://whitepaper.pirateland.io" target="_blank">Whitepaper</a></li>
+                            <li><a href="mailto:contact@pirateland.io">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <h4>© 2021 All RIGHTS RESERVED.</h4>
+            </div>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/Pirateland.js"></script>
+    <script>
+        // $(document).ready(function() {
+        document.documentElement.classList.add('js');
+
+        /// ----------------------------
+
+        const $rootSingle = $('.cSlider--single');
+        const $rootNav = $('.cSlider--nav');
+
+        $rootSingle.slick({
+            slide: '.cSlider__item',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: false,
+            adaptiveHeight: true,
+            // infinite: false,
+            useTransform: true,
+            speed: 400,
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+        });
+
+        $rootNav.on('init', function(event, slick) {
+                $(this).find('.slick-slide.slick-current').addClass('is-active');
+            })
+            .slick({
+                slide: '.cSlider__item',
+                slidesToShow: 9,
+                slidesToScroll: 9,
+                dots: false,
+                focusOnSelect: false,
+                // infinite: false,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                    }
+                }, {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                    }
+                }, {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                }]
+            });
+
+        $rootSingle.on('afterChange', function(event, slick, currentSlide) {
+            $('.active-' + currentSlide).css('filter', 'none');
+            for (let i = 0; i <= 7; i++) {
+                if (i != currentSlide) {
+                    $('.active-' + i).css('filter', 'grayscale(100%)');
+                }
+            }
+            $rootNav.slick('slickGoTo', currentSlide);
+            $rootNav.find('.slick-slide.is-active').removeClass('is-active');
+            $rootNav.find('.slick-slide[data-slick-index="' + currentSlide + '"]').addClass('is-active');
+        });
+
+        $rootNav.on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+            $rootSingle.slick('slickGoTo', goToSingleSlide);
+
+        });
+        // });
+    </script>
+</body>
+
+</html>
