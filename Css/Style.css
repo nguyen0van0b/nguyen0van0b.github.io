@@ -757,17 +757,13 @@ li:hover a {
     height: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.section_seven img:first-child {
-    width: 600px;
-    height: 300px;
-    margin: 0 calc((100% - 600px) / 2);
+    background-color: #000;
 }
 
 .section_seven img {
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    height: 100%;
+    margin: 0 5%;
 }
 
 
@@ -784,12 +780,16 @@ li:hover a {
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #502f00;
+    /* background-color: #502f00; */
+}
+
+.background-eight {
+    position: absolute;
+    z-index: 0;
 }
 
 .section_eight--container {
     position: relative;
-    /* max-width: 1200px; */
     width: 100%;
     height: 100%;
     margin: auto;
@@ -882,7 +882,7 @@ li:hover a {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
 }
 
 .wrapper_socials ion-icon {
@@ -1573,6 +1573,7 @@ footer .copyright h4 {
     }
     .item_FEATURES-desc p {
         font-size: 2rem;
+        line-height: 1.5;
     }
     .cSlider--single {
         height: 400px;
@@ -1590,20 +1591,15 @@ footer .copyright h4 {
         min-height: 93px !important;
         top: -15% !important;
     }
-    .section_seven img:first-child {
-        width: 80vw;
-        height: 30vw;
-        margin: 0 calc((100% - 80vw) / 2);
+    .section_seven img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
     }
     .section_eight--container .ourteam_title {
         width: 80vw;
         height: 30vw;
         margin: calc((100% - 80vw) / 2);
-    }
-    .section_seven img {
-        width: 160%;
-        margin: 0;
-        margin-left: -28%;
     }
     .wrapper-item {
         margin-top: 0;
@@ -1685,9 +1681,11 @@ footer .copyright h4 {
     .section_second2--container {
         height: 82%;
     }
+    .section_four {
+        height: 450px;
+    }
     .section_four--decs {
-        width: 135%;
-        left: -20%;
+        width: 100%;
         top: 0;
     }
     .section_Island--container img {
@@ -1732,7 +1730,10 @@ footer .copyright h4 {
     }
     .item_Team--eight .wrapper_socials {
         text-align: left;
-        bottom: 0;
+        bottom: -3px;
+    }
+    .wrapper_socials a {
+        padding: 0;
     }
     .section_eight--name {
         top: 7%;
