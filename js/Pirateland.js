@@ -7,44 +7,34 @@ function Function_menu_mobile() {
     }
 }
 
+document.addEventListener("mousemove", parallax);
 
-
-// Zoom in/out clothing img
-$('.image').click(function() {
-    $(this).toggleClass('normal-zoom zoom-in');
-});
-
-$('.image').on('mousemove', function(event) {
-    // This gives you the position of the image on the page
-    var bbox = event.target.getBoundingClientRect();
-
-    // Then we measure how far into the image the mouse is in both x and y directions
-    var mouseX = event.clientX - bbox.left;
-    var mouseY = event.clientY - bbox.top;
-
-    // Then work out how far through the image as a percentage the mouse is
-    var xPercent = (mouseX / bbox.width) * 100;
-    var yPercent = (mouseY / bbox.height) * 100;
-
-    // Then we change the `transform-origin` css property on the image to center the zoom effect on the mouse position
-    //event.target.style.transformOrigin = xPercent + '% ' + yPercent + '%';
-    // It's a bit clearer in jQuery:
-    $(this).css('transform-origin', (xPercent + '% ' + yPercent + '%'));
-    // We add the '%' units to make sure the string looks exactly like the css declaration it becomes.
-
-});
-
-// If you want it to automatically trigger on hover
-$('.image').on('mouseenter', function() {
-    $(this).addClass('zoom-in');
-    $(this).removeClass('normal-zoom');
-});
-
-// and stop when not hovering
-$('.image').on('mouseleave', function() {
-    $(this).addClass('normal-zoom');
-    $(this).removeClass('zoom-in');
-});
+function parallax(e) {
+    document.querySelectorAll(".image1").forEach(function(move) {
+        var moving = move.getAttribute("data-value");
+        var x = e.clientX * -moving / 220;
+        var y = e.clientY * -moving / 220;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+    document.querySelectorAll(".image2").forEach(function(move) {
+        var moving = move.getAttribute("data-value");
+        var x = e.clientX * -moving / 200;
+        var y = e.clientY * -moving / 200;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+    document.querySelectorAll(".image3").forEach(function(move) {
+        var moving = move.getAttribute("data-value");
+        var x = e.clientX * -moving / 100;
+        var y = e.clientY * -moving / 100;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+    document.querySelectorAll(".image4").forEach(function(move) {
+        var moving = move.getAttribute("data-value");
+        var x = e.clientX * -moving / 80;
+        var y = e.clientY * -moving / 80;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+}
 
 //Get the button Go to top
 var btn = $('#btn-top');

@@ -196,11 +196,10 @@ li:hover a {
 /* section_second */
 
 .section_second {
+    margin-top: -2px;
     width: 100%;
-    height: 100%;
+    height: 1100px;
     position: relative;
-    padding-top: 70px;
-    margin-bottom: -2px;
     /* background-image: url(https://images.pexels.com/photos/2936144/pexels-photo-2936144.jpeg?cs=srgb&dl=pexels-vaidas-vaiciulis-2936144.jpg&fm=jpg); */
 }
 
@@ -210,32 +209,57 @@ li:hover a {
     height: 100%;
     /* max-width: 1200px; */
     margin: auto;
+    overflow: hidden;
 }
 
 .section_second--decs {
-    width: 36%;
-    top: 0%;
-    left: 58%;
+    width: 30%;
+    top: 20%;
+    left: 10%;
     position: absolute;
+    /* text-align: center; */
     z-index: 2;
 }
 
-.section_second--decs p {
-    font-size: 3rem;
-    color: white;
-    margin: 20px 0 30px 0;
-    line-height: 1.8;
-}
-
-.get_ready {
+.banner-section-second {
     width: 100%;
-    text-align: center;
+    height: 105%;
+    position: absolute;
 }
 
-.section_second--decs span {
-    font-weight: 600;
-    font-size: 4rem;
-    color: #ffd230;
+.banner-section-second2 {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    display: none;
+}
+
+.image1,
+.image2,
+.image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+}
+
+.image1 {
+    width: 100%;
+    height: 90%;
+}
+
+.image2 {
+    width: 104%;
+    height: 95%;
+    left: 1%;
+}
+
+.image4 {
+    position: absolute;
+    width: 35%;
+    height: 25%;
+    top: 44%;
+    left: 16%;
 }
 
 
@@ -262,8 +286,8 @@ li:hover a {
     width: calc(100% - 6rem);
     height: 100%;
     text-align: center;
-    background-color: #d6b675;
-    color: #5e280a;
+    background-color: #000000;
+    color: #ffffff;
     padding: 3rem;
 }
 
@@ -428,7 +452,8 @@ li:hover a {
     width: 100%;
     height: 100%;
     position: relative;
-    background: url(../Media/nen_B&W.png) no-repeat center center / cover;
+    background: url(../Media/BACKGROUND.gif) no-repeat center center / cover;
+    /* background: url(../Media/nen_B&W.png) no-repeat center center / cover; */
     padding-top: 50px;
 }
 
@@ -1206,7 +1231,7 @@ footer .copyright h4 {
         left: 60%;
     }
     .section_four {
-        height: 500px;
+        height: 300px;
     }
     .img-section-four {
         max-width: 400px;
@@ -1279,22 +1304,6 @@ footer .copyright h4 {
     .section_FEATURES h1 {
         font-size: 4rem;
     }
-    /* .cSlider--single .cSlider__item img {
-        max-width: 700px;
-        max-height: 700px;
-    } */
-    /* .cSlider--single .cSlider__item .ship-6 {
-        max-width: 650px;
-        max-height: 650px;
-        margin-left: 10%;
-        margin-top: -50px;
-    } */
-    /* .cSlider--single .cSlider__item .ship-7 {
-            max-width: 650px;
-            max-height: 650px;
-            margin-left: 10%;
-            margin-top: -100px;
-        } */
     .item_FEATURES-desc h3 {
         margin-top: 20px;
         font-size: 4em;
@@ -1583,10 +1592,6 @@ footer .copyright h4 {
         min-height: 245px;
         top: 80%;
     }
-    .section_second--decs p {
-        font-size: 2rem;
-        margin: 0;
-    }
     .section_third--decs img {
         min-height: 93px !important;
         top: -15% !important;
@@ -1603,6 +1608,16 @@ footer .copyright h4 {
     }
     .wrapper-item {
         margin-top: 0;
+    }
+    .section_second {
+        height: 600px;
+    }
+    .banner-section-second {
+        display: none;
+    }
+    .banner-section-second2 {
+        margin-top: 70px;
+        display: block;
     }
 }
 
@@ -1682,7 +1697,7 @@ footer .copyright h4 {
         height: 82%;
     }
     .section_four {
-        height: 450px;
+        height: 300px;
     }
     .section_four--decs {
         width: 100%;
@@ -1794,9 +1809,6 @@ footer .copyright h4 {
     }
     .section_second--decs {
         top: 10%;
-    }
-    .clip-section-second {
-        top: 70%;
     }
     .section_FEATURES {
         height: 1650px;
