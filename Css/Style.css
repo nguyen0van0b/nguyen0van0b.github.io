@@ -452,9 +452,17 @@ li:hover a {
     width: 100%;
     height: 100%;
     position: relative;
-    background: url(../Media/BACKGROUND.gif) no-repeat center center / cover;
+    /* background: url(../Media/BACKGROUND.gif) no-repeat center center / cover; */
     /* background: url(../Media/nen_B&W.png) no-repeat center center / cover; */
     padding-top: 50px;
+    overflow: hidden;
+}
+
+.section_third .container video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .break-page {
@@ -563,7 +571,7 @@ li:hover a {
 
 .section_four {
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     position: relative;
     background-color: #000000d9;
     overflow: hidden;
@@ -576,6 +584,10 @@ li:hover a {
     height: 100%;
     /* max-width: 1200px; */
     margin: auto;
+}
+
+.section_four--container video {
+    width: 100%;
 }
 
 .section_four--decs {
@@ -990,6 +1002,10 @@ li:hover a {
     width: 50%;
 }
 
+video::-webkit-media-controls {
+    display: none !important;
+}
+
 .section_subscribe .title_subscribe h3 {
     font-size: 25px;
     font-family: Poppins, sans-serif;
@@ -1198,6 +1214,10 @@ footer .copyright h4 {
         min-height: 496px;
         min-width: 418px;
     }
+    .section_third .container video {
+        width: auto;
+        height: 100%;
+    }
     .section_four--decs {
         width: 40%;
     }
@@ -1229,9 +1249,6 @@ footer .copyright h4 {
         width: 36%;
         top: 4%;
         left: 60%;
-    }
-    .section_four {
-        height: 300px;
     }
     .img-section-four {
         max-width: 400px;
@@ -1453,6 +1470,9 @@ footer .copyright h4 {
     .item_FEATURES-desc p {
         line-height: 2;
     }
+    .cSlider--single {
+        height: 500px;
+    }
     .cSlider--single .cSlider__item img {
         max-width: 649px;
         max-height: 750px;
@@ -1492,9 +1512,6 @@ footer .copyright h4 {
         position: absolute;
         top: 20%;
         left: 61%;
-    }
-    .section_four {
-        height: 750px;
     }
     .img-section-four {
         width: 41%;
@@ -1592,9 +1609,20 @@ footer .copyright h4 {
         min-height: 245px;
         top: 80%;
     }
+    .section_third {
+        overflow: hidden;
+    }
     .section_third--decs img {
         min-height: 93px !important;
         top: -15% !important;
+    }
+    .section_third .container video {
+        width: 300%;
+        margin-left: -140%;
+    }
+    .section_four--container video {
+        width: 150%;
+        margin-left: -25%;
     }
     .section_seven img {
         width: 100%;
@@ -1695,9 +1723,6 @@ footer .copyright h4 {
     }
     .section_second2--container {
         height: 82%;
-    }
-    .section_four {
-        height: 300px;
     }
     .section_four--decs {
         width: 100%;
