@@ -1648,10 +1648,14 @@ footer .copyright h4 {
     .wrapper_fearures .FEATURES_img_right .feature {
         width: 100%;
         left: 0;
+        top: 90%;
+        z-index: 5;
     }
     .section_FEATURES .FEATURES_img_left .about {
         width: 100%;
         right: 0;
+        top: 90%;
+        z-index: 5;
     }
     .slick-list {
         height: 100% !important;
