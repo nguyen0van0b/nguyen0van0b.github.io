@@ -1554,10 +1554,13 @@ footer .copyright h4 {
 
 @media screen and (max-width: 500px) {
     .social_media {
-        top: 30%;
+        top: 33%;
         width: 100%;
         left: 0;
         text-align: center;
+    }
+    .social_media a {
+        padding: 5px;
     }
     .section_FEATURES {
         height: 2200px;
