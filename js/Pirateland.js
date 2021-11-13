@@ -34,6 +34,12 @@ function parallax(e) {
         var y = e.clientY * -moving / 80;
         move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
     });
+    // document.querySelectorAll(".social_media").forEach(function(move) {
+    //     var moving = move.getAttribute("data-value");
+    //     var x = e.clientX * -moving / 80;
+    //     var y = e.clientY * -moving / 80;
+    //     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    // });
 }
 
 //Get the button Go to top
