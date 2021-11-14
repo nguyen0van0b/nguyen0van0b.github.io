@@ -181,10 +181,49 @@ a {
     left: 0;
 }
 
-li:hover a {
-    /* color: #000; */
+nav ul li:hover>a {
     text-shadow: 0 0 0.2em #f87, 0 0 0.5em #ff8d00;
-    /* text-shadow: 0 0 0.5em red; */
+}
+
+
+/*Ẩn các menu con cấp 1*/
+
+nav li ul {
+    margin-top: 10px;
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+
+nav li>ul li {
+    width: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.78);
+    text-align: left;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li>ul li:first-child a {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+nav li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav li>ul li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*khi hover thì hiện menu con*/
+
+nav li:hover>ul {
+    display: block;
 }
 
 .menu-mobile-icon {
