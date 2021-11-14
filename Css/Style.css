@@ -1332,9 +1332,15 @@ footer .copyright h4 {
         font-size: 4em;
     }
     .section_third--decs {
-        width: 35%;
+        width: 25%;
         left: 65%;
         top: 5%;
+    }
+    .section_FEATURES .FEATURES_img_left .about {
+        right: 30%;
+    }
+    .wrapper_fearures .FEATURES_img_right .feature {
+        left: 15%;
     }
     .img-section-four {
         width: 34%;
@@ -1850,6 +1856,15 @@ footer .copyright h4 {
     #btn-top {
         bottom: 0;
         right: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container_left .item_FEATURES-desc {
+        top: 5%;
+    }
+    .item_FEATURES-desc {
+        top: 2%;
     }
 }
 
