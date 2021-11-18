@@ -614,9 +614,14 @@
         // });
     </script>
     <script>
-        $(window).on('load', function(event) {
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded');
             $('.wrapper-loading').hide();
+
         });
+        // setInterval(function() {
+        //     $('.wrapper-loading').hide();
+        // }, 5000);
     </script>
 </body>
 
