@@ -1040,7 +1040,7 @@ nav li:hover>ul {
 
 .item_Team--eight .wrapper_socials {
     width: 100%;
-    text-align: center;
+    text-align: left;
     position: absolute;
     bottom: -5px;
 }
@@ -1048,10 +1048,8 @@ nav li:hover>ul {
 .wrapper_socials ion-icon {
     width: 2vw;
     height: 2vw;
-    min-width: 25px;
-    min-height: 25px;
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
     color: #052c52;
 }
 
@@ -1964,6 +1962,7 @@ footer .copyright h4 {
     }
     .team10 {
         margin: 0;
+        top: 0 !important;
     }
     .helper {
         padding: 0;

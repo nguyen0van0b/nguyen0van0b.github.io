@@ -57,3 +57,8 @@ btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
+
+//page is fully loaded
+window.addEventListener('load', (event) => {
+    $('.wrapper-loading').hide();
+});

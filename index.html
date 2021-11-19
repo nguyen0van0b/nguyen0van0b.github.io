@@ -79,9 +79,6 @@
 <body>
     <div class="wrapper-loading">
         <div class="loader">
-            <!-- <div class="inner one"></div>
-            <div class="inner two"></div>
-            <div class="inner three"></div> -->
             <img src="./Media/banhlailoading.png" alt="" class="imgloading">
         </div>
     </div>
@@ -517,16 +514,6 @@
             once: true
         });
     </script>
-
-    <script>
-        function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function() {
-                console.log('User signed out.');
-            });
-        }
-    </script>
-
     <script>
         // $(document).ready(function() {
         document.documentElement.classList.add('js');
@@ -597,15 +584,7 @@
         });
         // });
     </script>
-    <script>
-        window.addEventListener('load', (event) => {
-            console.log('page is fully loaded');
-            $('.wrapper-loading').hide();
-        });
-        // setInterval(function() {
-        //     $('.wrapper-loading').hide();
-        // }, 5000);
-    </script>
+
 </body>
 
 </html>
