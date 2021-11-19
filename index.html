@@ -77,24 +77,13 @@
 </style>
 
 <body>
-    <div class="wrapper-loading">
-        <div class="loading">
-            <div class="planet">
-                <div class="ring"></div>
-                <div class="cover-ring"></div>
-                <div class="spots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <p>loading</p>
+    <!-- <div class="wrapper-loading">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
         </div>
-    </div>
+    </div> -->
     <header>
         <div class="header-container container">
             <div class="logo">
@@ -468,7 +457,7 @@
                         </div>
                     </div>
                     <div class="item_Team--eight member" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="./Media/10+_TEAM_MEMBERS.png" class="img-wanted" alt="">
+                        <img src="./Media/10+_TEAM_MEMBERS.png" class="img-wanted team10" alt="">
                     </div>
                 </div>
             </div>
@@ -527,15 +516,7 @@
             once: true
         });
     </script>
-    <script>
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-            console.log('Name: ' + profile.getName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-        }
-    </script>
+
     <script>
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
@@ -616,11 +597,13 @@
         // });
     </script>
     <script>
-        window.addEventListener('load', (event) => {
-            console.log('page is fully loaded');
+        // window.addEventListener('load', (event) => {
+        //     console.log('page is fully loaded');
+        //     $('.wrapper-loading').hide();
+        // });
+        setInterval(function() {
             $('.wrapper-loading').hide();
-
-        });
+        }, 5000);
     </script>
 </body>
 
