@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pirate Land - Treasure In Metaverse</title>
-    <link rel="stylesheet" href="./Css/StyleV3.css">
-    <link rel="stylesheet" href="./Css/style2.css">
+    <link rel="stylesheet" href="./Css/StyleV5.css">
+    <link rel="stylesheet" href="./Css/style3.css">
     <link rel="stylesheet" href="./Css/slick.css">
     <link rel="icon" type="image/png" href="./Media/02.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -77,13 +77,14 @@
 </style>
 
 <body>
-    <!-- <div class="wrapper-loading">
+    <div class="wrapper-loading">
         <div class="loader">
-            <div class="inner one"></div>
+            <!-- <div class="inner one"></div>
             <div class="inner two"></div>
-            <div class="inner three"></div>
+            <div class="inner three"></div> -->
+            <img src="./Media/banhlailoading.png" alt="" class="imgloading">
         </div>
-    </div> -->
+    </div>
     <header>
         <div class="header-container container">
             <div class="logo">
@@ -597,13 +598,13 @@
         // });
     </script>
     <script>
-        // window.addEventListener('load', (event) => {
-        //     console.log('page is fully loaded');
-        //     $('.wrapper-loading').hide();
-        // });
-        setInterval(function() {
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded');
             $('.wrapper-loading').hide();
-        }, 5000);
+        });
+        // setInterval(function() {
+        //     $('.wrapper-loading').hide();
+        // }, 5000);
     </script>
 </body>
 
