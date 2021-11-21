@@ -402,14 +402,16 @@ nav li:hover>ul {
 .section_FEATURES .FEATURES_bg1 {
     position: absolute;
     z-index: 0;
-    width: 116%;
-    margin-left: -16%;
+    width: 107%;
+    margin-left: -7%;
+    transform: scaleX(-1);
 }
 
 .section_FEATURES .FEATURES_bg2 {
     position: absolute;
     z-index: 0;
-    width: 117%;
+    width: 107%;
+    object-fit: fill;
 }
 
 .section_FEATURES .FEATURES_img_left {
@@ -1303,9 +1305,6 @@ footer .copyright h4 {
     }
     .section_FEATURES .FEATURES_bg1 {
         height: 600px;
-    }
-    .section_FEATURES .FEATURES_bg2 {
-        width: 110%;
     }
     .section_FEATURES .wrapper_fearures {
         flex-direction: column;
