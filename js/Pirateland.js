@@ -59,6 +59,12 @@ btn.on('click', function(e) {
 });
 
 //page is fully loaded
+
+
+setTimeout(function() {
+    $('.wrapper-loading').hide();
+}, 60000);
 window.addEventListener('load', (event) => {
     $('.wrapper-loading').hide();
+
 });
