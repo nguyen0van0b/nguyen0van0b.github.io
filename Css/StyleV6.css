@@ -322,7 +322,6 @@ nav li:hover>ul {
 .section_second2 {
     width: 100%;
     height: 100%;
-    /* background-image: url(https://images.pexels.com/photos/2936144/pexels-photo-2936144.jpeg?cs=srgb&dl=pexels-vaidas-vaiciulis-2936144.jpg&fm=jpg); */
 }
 
 .section_second2--container {
@@ -334,6 +333,43 @@ nav li:hover>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.airdrop-top {
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    background: url(../Media/bg-adrop-top.png)no-repeat center center / cover;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    z-index: 2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.airdrop-top img {
+    position: absolute;
+    z-index: 1;
+    height: auto;
+}
+
+.airdrop-top .airdrop-text {
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.airdrop-top a {
+    font-size: 3rem;
+    background-color: black;
+    float: right;
+    border-radius: 10px;
+    margin-right: 2%;
 }
 
 .section_second2--decs {
@@ -1257,6 +1293,15 @@ footer .copyright h4 {
      :root {
         --font-size-title: 3rem;
     }
+    .airdrop-top {
+        flex-direction: column;
+    }
+    .airdrop-top a {
+        margin: 5px
+    }
+    .airdrop-top .airdrop-text {
+        text-align: center;
+    }
     .wrapper-loading {
         background: url(../Media/bg_load_mb.jpg)no-repeat center center / cover !important;
     }
@@ -1444,6 +1489,15 @@ footer .copyright h4 {
     .social_media a {
         padding: 5px;
     }
+    .airdrop-top {
+        top: 70%;
+    }
+    .airdrop-top .airdrop-text {
+        font-size: 1.5rem;
+    }
+    .airdrop-top a {
+        font-size: 2rem;
+    }
     .section_FEATURES {
         height: 2200px;
     }
@@ -1477,7 +1531,7 @@ footer .copyright h4 {
         margin-left: -140%;
     }
     .section_four--container img {
-        content: url(../Media/AIRDROP-mobile.png);
+        content: url(../Media/AD_PHONE.jpg);
     }
     #mroadmap {
         width: 100%;
