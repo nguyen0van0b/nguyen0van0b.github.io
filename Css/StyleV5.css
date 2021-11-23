@@ -362,7 +362,7 @@ nav li:hover>ul {
     height: 60px;
     border: 2px solid #ffff;
     border-radius: 13px;
-    margin: 0 15px;
+    margin: 5px 15px;
 }
 
 .clip-section2-second {
@@ -887,7 +887,7 @@ video::-webkit-media-controls {
     top: 50%!important;
     transform: translate(0, -50%);
     width: 140%;
-    margin-left: -26%;
+    margin-left: -20%;
 }
 
 .section_eight--decs p:not(.project_leader) {
@@ -1256,6 +1256,9 @@ footer .copyright h4 {
 @media screen and (max-width: 786px) {
      :root {
         --font-size-title: 3rem;
+    }
+    .wrapper-loading {
+        background: url(../Media/bg_load_mb.jpg)no-repeat center center / cover !important;
     }
     .image4 {
         top: 40%;

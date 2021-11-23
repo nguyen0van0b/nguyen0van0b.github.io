@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 12;
     background: url(../Media/GUILDE_SKY.jpg)no-repeat center center / cover;
+    /* background-color: white; */
 }
 
 .loader {
