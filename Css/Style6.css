@@ -1489,7 +1489,7 @@ footer .copyright h4 {
     .airdrop-top {
         top: auto;
         bottom: 20px;
-        z-index: 2;
+        z-index: 6;
     }
     .social_media a {
         padding: 5px;
