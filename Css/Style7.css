@@ -786,6 +786,7 @@ video::-webkit-media-controls {
     width: 100%;
     height: 100%;
     position: relative;
+    content: url(../Media/roadmap.png);
 }
 
 #q321,
@@ -801,26 +802,31 @@ video::-webkit-media-controls {
 #q321 {
     left: 20%;
     top: 56%;
+    content: url(../Media/Q3_2021.png);
 }
 
 #q421 {
     left: 62%;
     top: 58%;
+    content: url(../Media/Q4_2021.png);
 }
 
 #q122 {
     top: 31%;
     left: 22%;
+    content: url(../Media/Q1_2022.png);
 }
 
 #q222 {
     left: 66%;
     top: 38%;
+    content: url(../Media/Q2_2022.png);
 }
 
 #q322 {
     left: 45%;
     top: 21%;
+    content: url(../Media/Q3_2022.png);
 }
 
 
