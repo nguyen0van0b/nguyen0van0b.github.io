@@ -372,6 +372,16 @@ nav li:hover>ul {
     margin-right: 2%;
 }
 
+.airdrop-top .close-airdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: 0;
+    font-weight: 900;
+    font-size: large;
+}
+
 .section_second2--decs {
     width: calc(100% - 6rem);
     height: 100%;
@@ -1499,6 +1509,10 @@ footer .copyright h4 {
     }
     .airdrop-top a {
         font-size: 2rem;
+    }
+    .airdrop-top .close-airdrop {
+        right: auto;
+        left: 0;
     }
     .section_FEATURES {
         height: 2200px;

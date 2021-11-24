@@ -68,3 +68,8 @@ window.addEventListener('load', (event) => {
     $('.wrapper-loading').hide();
 
 });
+
+// Close airdrop top
+function myFunClose() {
+    document.getElementById("air-top").style.display = "none";
+}
