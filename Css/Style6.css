@@ -1486,6 +1486,11 @@ footer .copyright h4 {
         left: 0;
         text-align: center;
     }
+    .airdrop-top {
+        top: auto;
+        bottom: 20px;
+        z-index: 2;
+    }
     .social_media a {
         padding: 5px;
     }
