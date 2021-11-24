@@ -713,6 +713,10 @@ video::-webkit-media-controls {
     outline: none;
 }
 
+.section_four--container a {
+    padding: 0;
+}
+
 .section_four--container img {
     width: 100%;
     outline: none;
