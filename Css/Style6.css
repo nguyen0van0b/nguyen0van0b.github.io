@@ -339,6 +339,7 @@ nav li:hover>ul {
     width: 70%;
     height: auto;
     padding: 15px;
+    border-radius: 15px;
     background: url(../Media/bg-adrop-top.png)no-repeat center center / cover;
     position: fixed;
     top: 100px;
@@ -348,7 +349,6 @@ nav li:hover>ul {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
 }
 
 .airdrop-top img {
