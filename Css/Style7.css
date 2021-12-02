@@ -12,6 +12,10 @@
     src: url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.eot?#iefix") format("embedded-opentype"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.woff2") format("woff2"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.woff") format("woff"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.ttf") format("truetype"), url("https://athenawebassetsprod.azureedge.net/0ab3bfd30a2bc26efc38da8365ea41b1/fonts/windlass/windlass.svg#Windlass") format("svg")
 }
 
+.section_eight {
+    display: none;
+}
+
 img {
     outline: none;
 }
@@ -26,7 +30,6 @@ div {
 
 html {
     font-family: "Times New Roman", sans-serif;
-    font-family: "Manuskript", "Georgia", "serif";
     font-size: 9px;
     scroll-behavior: smooth;
 }
@@ -78,10 +81,6 @@ header {
     /* background-color: #333; */
 }
 
-#btn-top:active {
-    /* background-color: #555; */
-}
-
 #btn-top.show {
     opacity: 1;
     visibility: visible;
@@ -99,11 +98,6 @@ header {
     justify-content: space-between;
     height: 70px;
     align-items: center;
-}
-
-.wrapper-main {
-    /* background-color: #000; */
-    /* background: url("../Media/Background.png") no-repeat center center / cover; */
 }
 
 .container {
@@ -900,10 +894,6 @@ video::-webkit-media-controls {
     height: 230px;
     top: 15%;
     left: calc((100% - 230px)/2);
-}
-
-.section_eight--img img {
-    /* filter: grayscale(100%); */
 }
 
 .section_eight--name {
